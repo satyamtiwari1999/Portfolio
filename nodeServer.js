@@ -18,16 +18,31 @@ let server = http.createServer((req, res) => {
     console.log(`Trying to ${req.method} from ${req.url}`)
     // finding path for the file
     let mod_url = []
-    req.url.split('/').forEach((elem) => {
-        if (elem !== '/') {
-            mod_url.push(elem)
-        } else {
-            mod_url.push('\\')
-        }
-    })
-    mod_url = mod_url.join('\\')
-    // console.log('mod : ', mod_url)
-    let path = __dirname + "\\" + mod_url
+
+    //ON PC
+
+    // req.url.split('/').forEach((elem) => {
+    //     if (elem !== '/') {
+    //         mod_url.push(elem)
+    //     } else {
+    //         mod_url.push('\\')
+    //     }
+    // })
+    // mod_url = mod_url.join('\\')
+    // let path = __dirname + "\\" + mod_url
+
+
+    // ON Heroku
+    // req.url.split('/').forEach((elem) => {
+    //     if (elem !== '/') {
+    //         mod_url.push(elem)
+    //     } else {
+    //         mod_url.push('/')
+    //     }
+    // })
+    // mod_url = mod_url.join('/')
+    let path = __dirname + "/" + mod_url
+    console.log(path)
 
     // responding the home page
     if (req.url === '/' || req.url === '/index.html'){
@@ -35,6 +50,7 @@ let server = http.createServer((req, res) => {
         // let html_file = []
         fs.readFile('./index.html', 'utf-8', (err, chunk) => {
             if (err){
+                console.log(err)
                 throw err
             }
             // console.log(chunk)
@@ -46,6 +62,7 @@ let server = http.createServer((req, res) => {
         // console.log(path)
         fs.readFile(path, 'utf-8', (err, chunk) => {
             if (err) {
+                console.log(error)
                 throw err
             }
             // console.log(chunk)
