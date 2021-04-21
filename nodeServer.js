@@ -17,7 +17,7 @@ let server = http.createServer((req, res) => {
 
     console.log(`Trying to ${req.method} from ${req.url}`)
     // finding path for the file
-    let mod_url = []
+    // let mod_url = []
 
     //ON PC
 
@@ -41,7 +41,7 @@ let server = http.createServer((req, res) => {
     //     }
     // })
     // mod_url = mod_url.join('/')
-    let path = __dirname + "/" + mod_url
+    let path = __dirname + req.url
     console.log(path)
 
     // responding the home page
