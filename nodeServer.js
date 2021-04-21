@@ -62,7 +62,7 @@ let server = http.createServer((req, res) => {
         // console.log(path)
         fs.readFile(path, 'utf-8', (err, chunk) => {
             if (err) {
-                console.log(error)
+                console.log(err)
                 throw err
             }
             // console.log(chunk)
