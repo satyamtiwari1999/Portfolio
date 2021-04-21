@@ -106,6 +106,6 @@ let server = http.createServer((req, res) => {
 
 // making server listen to host with a port
 let port = process.env.PORT || 5000
-server.listen(port, 'localhost', () => {
+server.listen(port, '0.0.0.0', () => {
     console.log('Server is up and running..... ')
 })
