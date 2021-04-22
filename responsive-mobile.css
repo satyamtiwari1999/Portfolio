@@ -4,7 +4,8 @@
     .content-container {
         width: 87% !important;
     }
-
+    /* Banner */
+    /* -------------------------------------------------------  */
     .banner-text h1 {
         font-size: 110px;
         font-weight: 500;
@@ -34,8 +35,16 @@
     .icon img{
         width : 2em;
     }
+    /*  -----------------------------------------    */
+    /*   Header   */
 
-
+    .header-child-large{
+        font-size: 20px !important;
+        line-height: 15px;
+    }
+    .header-child{
+        visibility: hidden;
+    }
     /*-----------------------------------------------------*/
 /*    About Section    */
     #rotate-boxes
