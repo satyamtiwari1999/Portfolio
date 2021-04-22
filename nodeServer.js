@@ -42,7 +42,6 @@ let server = http.createServer((req, res) => {
         fs.readFile('./index.html', 'utf-8', (err, chunk) => {
             if (err) {
                 console.log(err)
-                throw err
             }
             // console.log(chunk)
             res.end(chunk)
@@ -54,7 +53,6 @@ let server = http.createServer((req, res) => {
         fs.readFile(path, 'utf-8', (err, chunk) => {
             if (err) {
                 console.log(err)
-                throw err
             }
             // console.log(chunk)
             res.end(chunk, 'utf-8')
