@@ -1,49 +1,47 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     border-width: 0;
 }
-a
-{
+
+a {
     color: inherit;
     text-decoration: none;
 }
-*::selection
-{
+
+*::selection {
     background-color: transparent;
 }
 
 /* ----------------------------------------------------------------------------------------- */
 
 /* outermost flex containers */
-.outermost-container
-{
+.outermost-container {
     display: flex !important;
-    align-content: center  !important;
+    align-content: center !important;
     justify-content: center !important;
     padding: 50px 0;
 }
-.content-container
-{
+
+.content-container {
     width: 67% !important;
     align-items: center;
 }
+
 /* Repeating elems */
-.flex-container-horizontal
-{
+.flex-container-horizontal {
     display: inline-block;
     width: 100%;
     padding-top: 3vmin;
 }
-.flex-container
-{
+
+.flex-container {
     display: flex;
 }
+
 /* ------------------------------------------------------------------------------------------- */
 /* header */
-#header
-{
+#header {
     height: 7vmin;
     position: fixed;
     align-items: center;
@@ -51,40 +49,39 @@ a
     /* background-color: #a4161a; */
     color: White;
 }
-.flex-container-vertical
-{
+
+.flex-container-vertical {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.header-child-large, .header-child
-{
+
+.header-child-large, .header-child {
     text-align: center;
     font-size: 3vmin;
-    font-family: 'Caveat', cursive;
+    font-family: "Caveat", cursive;
     float: left;
     /* display: block; */
     /* background-color: red !important; */
     /* font-style: italic; */
 }
-.header-child-large
-{
+
+.header-child-large {
     width: 37%;
 }
-.header-child
-{
+
+.header-child {
     width: 12.5%;
 }
+
 /* header animations */
-.header-child-large a:hover , .header-child a:hover
-{
+.header-child-large a:hover, .header-child a:hover {
     font-weight: bold;
 }
 
-.section-head
-{
-    font-family: 'Caveat', cursive;
+.section-head {
+    font-family: "Caveat", cursive;
     font-size: 5em;
     /* margin-bottom: 20px; */
     padding: 30px 0;
@@ -94,8 +91,7 @@ a
 /* ---------------------------------------------------------------------------- */
 
 /* About Section */
-.banner-space
-{
+.banner-space {
     padding-top: 85px;
     padding-bottom: 200px;
     background-color: black;
@@ -105,46 +101,43 @@ a
     background-position: right;
 }
 
-.banner-text
-{
+.banner-text {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-items: left;
- }
+}
 
-.banner-text *
-{
+.banner-text * {
     width: 100%;
     color: white;
 }
 
-.banner-text h1
-{
-    font-family: 'Caveat', cursive;
+.banner-text h1 {
+    font-family: "Caveat", cursive;
     font-size: 8em;
     margin-top: 50px;
     margin-bottom: 5px;
 }
-.banner-text h3
-{
-    font-family: 'Zilla Slab Highlight', cursive;
+
+.banner-text h3 {
+    font-family: "Zilla Slab Highlight", cursive;
     margin-top: 20px;
     font-size: 2em;
 }
-.icon
-{
+
+.icon {
     display: inline-block;
     width: 30%;
 }
-.icon-up
-{
+
+.icon-up {
     margin-top: -12em !important;
     /* margin-bottom: 5em; */
 }
-.icon img
-{
+
+.icon img {
     width: 3em;
     /* padding-right: 600px; */
     /* margin-bottom: 100px; */
@@ -153,24 +146,23 @@ a
 /* ----------------------------------------------------------- */
 
 /* About Section */
-#about
-{
+#about {
     /* font-family: 'Zilla Slab Highlight', cursive; */
     /* font-family: 'Zen Dots', cursive; */
-    font-family: 'Antic Slab', serif;
+    font-family: "Antic Slab", serif;
     font-size: 1.4rem;
     /* color: #161a1d; */
-    color : #161a1d;
+    color: #161a1d;
 }
-.about-color
-{
+
+.about-color {
     /* background-color: #adb5bd; */
     padding-bottom: 60px;
     /* margin-top: 15px; */
     /* padding-top: 25px; */
 }
-button
-{
+
+button {
     margin-top: 50px;
     padding: 10px 35px;
     /* background-color: #343a40; */
@@ -178,15 +170,14 @@ button
     /* background-color: #a4161a; */
     /* background-color: #660708; */
     background-color: #a4161a;
-    font-family: 'Zen Dots', cursive;
+    font-family: "Zen Dots", cursive;
     color: white;
     font-size: 1.7rem;
     border-radius: 30px;
 }
 
 /* Animations of About section */
-.table
-{
+.table {
     /* width: 500px;
     height: 900px;
     background-color: blueviolet;
@@ -197,8 +188,8 @@ button
     flex-direction: column;
     width: 100%;
 }
-.boxes
-{
+
+.boxes {
     /* display: inline-block; */
     background-color: rgba(0, 0, 0, 0);
     align-items: center;
@@ -207,42 +198,40 @@ button
 
 /* --------------------------- */
 /* Skill Section */
-.skill-title
-{
+.skill-title {
     margin: -50px 0;
     padding-top: 60px;
 }
-.skill-point img
-{
+
+.skill-point img {
     width: 50px;
     margin: 0 60px;
     display: none;
 }
-.skill-name
-{
+
+.skill-name {
     font-size: 2em;
     padding-left: 10px;
     width: 50%;
-    font-family: 'Zen Dots', cursive;
+    font-family: "Zen Dots", cursive;
     /* position : ; */
 }
 
-.skill-line
-{
+.skill-line {
     width: 50%;
     font-size: 2em;
     align-items: center;
     visibility: hidden;
     display: none;
 }
-.skill-color
-{
+
+.skill-color {
     /* background-color: #f8f9fa; */
     background-color: #dee2e6;
     padding-bottom: 50px;
 }
-.skill-counter
-{
+
+.skill-counter {
     /* background-color: #161a1d; */
     background-color: white;
     width: 4%;
@@ -250,42 +239,42 @@ button
     margin: 10px 5px;
     border: 2px solid #161a1d;
 }
-.skill-space
-{
+
+.skill-space {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-right: 3em;
 }
-#skill-about
-{
+
+#skill-about {
     padding-left: 10px;
     font-size: 1.4rem;
     margin: 25px 0;
 }
+
 /* --------------------------- */
 /* Project Section */
-.project-title-space
-{
-    padding : 25px 0 0 0;
-    margin : 0;
+.project-title-space {
+    padding: 25px 0 0 0;
+    margin: 0;
     background-color: #f5f3f4;
 }
-.project-space
-{
+
+.project-space {
     padding-bottom: 80px;
-    padding-top : 0;
+    padding-top: 0;
     background-color: #f5f3f4;
 }
-.project-list
-{
+
+.project-list {
     width: 30%;
     display: inline-flex;
     flex-flow: column;
     align-items: flex-start;
     justify-items: start;
 }
-.project-list button
-{
+
+.project-list button {
     display: block;
     margin-top: 10px !important;
     font-size: 1.3rem;
@@ -294,43 +283,43 @@ button
     /*margin-bottom: ;*/
     /*background-color: red;*/
 }
-.project-description
-{
+
+.project-description {
     justify-content: right;
     width: 70% !important;
     display: inline-flex;
     flex-direction: column;
     top: 0;
 }
-.project-title
-{
-    font-family: 'Caveat', cursive;
+
+.project-title {
+    font-family: "Caveat", cursive;
     font-size: 3.5em;
     text-align: left;
     padding-left: 30px;
     /*width: 70%;*/
 }
-.project-content
-{
+
+.project-content {
     padding-top: 20px;
-    font-family: 'Antic Slab', serif;
+    font-family: "Antic Slab", serif;
     font-size: 1.2rem;
     text-align: left;
     padding-left: 30px;
     /*width: 70%;*/
 }
-.project-main
-{
+
+.project-main {
     align-items: baseline;
 }
+
 /* ------------------------------------------------------------ */
 /* contact section */
 /* .contact-inner
 {
     padding: 50px 0 !important;
 } */
-.contact-left, .contact-right
-{
+.contact-left, .contact-right {
     width: 50%;
     display: inline-flex;
     flex-flow: column;
@@ -339,14 +328,14 @@ button
     text-align: Left;
     font-size: 2rem;
     /* font-family: 'Zilla Slab Highlight', cursive; */
-    font-family: 'Caveat', cursive;
+    font-family: "Caveat", cursive;
 }
-.contact-left *
-{
+
+.contact-left * {
     margin: 0.5rem 0;
 }
-.contact-space
-{
+
+.contact-space {
     padding: 0;
     background-image: url(./static/images/contact.jpg);
     background-repeat: repeat;
@@ -354,24 +343,23 @@ button
     color: White;
 }
 
-.contact-right form input
-{
+.contact-right form input {
     background-color: inherit;
     width: 80%;
     text-decoration: none;
     outline: None;
     border-bottom: 3px solid white;
     color: inherit;
-    font-family: 'Caveat', cursive;
+    font-family: "Caveat", cursive;
     font-size: 1.4rem;
 }
-.contact-right form button
-{
+
+.contact-right form button {
     margin-top: 15px;
     font-size: 1.1rem;
 }
-.contact-right form ::placeholder
-{
+
+.contact-right form ::placeholder {
     color: white;
-    background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
 }

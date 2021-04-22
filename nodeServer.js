@@ -17,39 +17,30 @@ let server = http.createServer((req, res) => {
 
     console.log(`Trying to ${req.method} from ${req.url}`)
     // finding path for the file
-    // let mod_url = []
+    let mod_url = []
 
-    //ON PC
+    // ON PC
 
-    // req.url.split('/').forEach((elem) => {
-    //     if (elem !== '/') {
-    //         mod_url.push(elem)
-    //     } else {
-    //         mod_url.push('\\')
-    //     }
-    // })
-    // mod_url = mod_url.join('\\')
-    // let path = __dirname + "\\" + mod_url
+    req.url.split('/').forEach((elem) => {
+        if (elem !== '/') {
+            mod_url.push(elem)
+        } else {
+            mod_url.push('\\')
+        }
+    })
+    mod_url = mod_url.join('\\')
+    let path = __dirname + "\\" + mod_url
 
 
-    // ON Heroku
-    // req.url.split('/').forEach((elem) => {
-    //     if (elem !== '/') {
-    //         mod_url.push(elem)
-    //     } else {
-    //         mod_url.push('/')
-    //     }
-    // })
-    // mod_url = mod_url.join('/')
-    let path = __dirname + req.url
-    console.log(path)
+    // let path = __dirname + req.url
+    // console.log(path)
 
     // responding the home page
-    if (req.url === '/' || req.url === '/index.html'){
+    if (req.url === '/' || req.url === '/index.html') {
         res.writeHead(200)
         // let html_file = []
         fs.readFile('./index.html', 'utf-8', (err, chunk) => {
-            if (err){
+            if (err) {
                 console.log(err)
                 throw err
             }
@@ -57,8 +48,8 @@ let server = http.createServer((req, res) => {
             res.end(chunk)
         })
 
-    //   responding for css and javascript files
-    }else if (/(.*css|.*js)/.test(req.url)){
+        //   responding for css and javascript files
+    } else if (/(.*css|.*js)/.test(req.url)) {
         // console.log(path)
         fs.readFile(path, 'utf-8', (err, chunk) => {
             if (err) {
@@ -70,16 +61,15 @@ let server = http.createServer((req, res) => {
         })
     }
     // responding to images
-    else if(/(.*jpg|.*png)/.test(req.url)){
+    else if (/(.*jpg|.*png)/.test(req.url)) {
         // console.log('this image is located but not loading rt now :       ', req.url)
         fs.readFile(path, 'Base64', (err, data) => {
-            if (!err ) res.end(data, 'Base64')
-            else{
+            if (!err) res.end(data, 'Base64')
+            else {
                 console.log(err)
             }
-            })
-    }
-    else if(/.*mailto:satyammtiwarii@gmail\.com/.test(req.url)){
+        })
+    } else if (/.*mailto:satyammtiwarii@gmail\.com/.test(req.url)) {
         console.log('Person Trying to send Personal Details')
         let detail = path.split('?')[1].split('&')
 
@@ -98,7 +88,7 @@ let server = http.createServer((req, res) => {
                 'Your connection request has been received... I will be reaching out to you soon.... '
         };
         // sending email
-        transporter.sendMail(mailOptions, function(error, info){
+        transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
                 console.log(error);
             } else {
@@ -109,7 +99,7 @@ let server = http.createServer((req, res) => {
         res.writeHead(200)
         // let html_file = []
         fs.readFile('./index.html', 'utf-8', (err, chunk) => {
-            if (err){
+            if (err) {
                 throw err
             }
             // console.log(chunk)
@@ -123,6 +113,7 @@ let server = http.createServer((req, res) => {
 
 // making server listen to host with a port
 let port = process.env.PORT || 5000
+
 server.listen(port, '0.0.0.0', () => {
     console.log('Server is up and running..... ')
 })
