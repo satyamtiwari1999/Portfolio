@@ -17,22 +17,22 @@ let server = http.createServer((req, res) => {
 
     console.log(`Trying to ${req.method} from ${req.url}`)
     // finding path for the file
-    let mod_url = []
+    // let mod_url = []
 
     // ON PC
 
-    req.url.split('/').forEach((elem) => {
-        if (elem !== '/') {
-            mod_url.push(elem)
-        } else {
-            mod_url.push('\\')
-        }
-    })
-    mod_url = mod_url.join('\\')
-    let path = __dirname + "\\" + mod_url
+    // req.url.split('/').forEach((elem) => {
+    //     if (elem !== '/') {
+    //         mod_url.push(elem)
+    //     } else {
+    //         mod_url.push('\\')
+    //     }
+    // })
+    // mod_url = mod_url.join('\\')
+    // let path = __dirname + "\\" + mod_url
 
 
-    // let path = __dirname + req.url
+    let path = __dirname + req.url
     // console.log(path)
 
     // responding the home page
