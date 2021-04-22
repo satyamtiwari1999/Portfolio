@@ -86,7 +86,7 @@
     .project-list button{
         font-size: 18px;
         padding: 5px 13px;
-        /*width: 100% !important;*/
+        width: 100% !important;
     }
     .project-main{
         flex-flow: column;
