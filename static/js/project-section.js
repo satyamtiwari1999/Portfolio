@@ -29,7 +29,7 @@ for(let i = 0; i < buttons.length; i ++){
         for (let j = buttons.length - 1; j >= 0; j--) {
             console.log('trying to change')
             buttons[j].style.backgroundColor = '#FFFFFF';
-            buttons[j].style.color = '#000000'
+            buttons[j].style.color = '#444444'
         }
         // console.log(i)
         // animating the current active button

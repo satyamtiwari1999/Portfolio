@@ -3,6 +3,12 @@
     padding: 0;
     border-width: 0;
     outline: none;
+    /*color: #444444;*/
+    /*font-weight: bolder;*/
+    /*font-family: 'Luckiest Guy', cursive;*/
+    /*font-family: 'Fuzag one', cursive;*/
+    /*font-family: 'Lato', sans-serif !important;*/
+    /*font-family: 'Bitter', serif !important;*/
 }
 
 a {
@@ -48,7 +54,7 @@ a {
     align-items: center;
     background-color: #212529;
     /* background-color: #a4161a; */
-    color: White;
+    color: white !important;
 }
 
 .flex-container-vertical {
@@ -61,7 +67,8 @@ a {
 .header-child-large, .header-child {
     text-align: center;
     font-size: 3vmin;
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Bitter', serif !important;
     /*font-family: 'Luckiest Guy', cursive;*/
     float: left;
     /* display: block; */
@@ -84,10 +91,12 @@ a {
 
 .section-head {
     font-family: "Caveat", cursive;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 5em;
     /* margin-bottom: 20px; */
     padding: 30px 0;
-    /* color : #a4161a; */
+     /*color : #a4161a; */
+    /*color : #444444;*/
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -119,14 +128,17 @@ a {
 .banner-text h1 {
     font-family: "Caveat", cursive;
     /*font-family: 'Luckiest Guy', cursive;*/
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 7em;
+
     margin-top: 50px;
     margin-bottom: 5px;
 }
 
 .banner-text h3 {
-    font-family: "Zilla Slab Highlight", cursive;
+    /*font-family: "Zilla Slab Highlight", cursive;*/
     /*font-family: 'Luckiest Guy', cursive;*/
+    font-family: 'Source Sans Pro', sans-serif;
     margin-top: 20px;
     font-size: 2em;
 }
@@ -156,7 +168,7 @@ a {
     font-family: "Antic Slab", serif;
     font-size: 1.4rem;
     /* color: #161a1d; */
-    color: #161a1d;
+    color: #444444 !important;
 }
 
 .about-color {
@@ -165,7 +177,10 @@ a {
     /* margin-top: 15px; */
     /* padding-top: 25px; */
 }
-
+.about-button{
+    margin: -50px 0 50px 0;
+    padding: 0;
+}
 button {
     margin-top: 50px;
     padding: 10px 35px;
@@ -176,6 +191,8 @@ button {
     background-color: #a4161a;
     font-family: "Zen Dots", cursive;
     color: white;
+    /*font-family: 'Bitter', serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1.7rem;
     border-radius: 30px;
 }
@@ -214,11 +231,13 @@ button {
 }
 
 .skill-name {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-left: 10px;
-    width: 50%;
-    font-family: "Zen Dots", cursive;
+    width: 35%;
+    /*font-family: "Zen Dots", cursive;*/
     /* position : ; */
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
 }
 
 .skill-line {
@@ -238,7 +257,7 @@ button {
 .skill-counter {
     /* background-color: #161a1d; */
     background-color: white;
-    width: 4%;
+    width: 3.5%;
     display: block;
     margin: 10px 5px;
     border: 2px solid #161a1d;
@@ -276,6 +295,7 @@ button {
     flex-flow: column;
     align-items: flex-start;
     justify-items: start;
+    margin-top : -10px
 }
 
 .project-list button {
@@ -283,7 +303,7 @@ button {
     margin-top: 10px !important;
     font-size: 1.3rem;
     background-color: white;
-    color: black;
+    color: #444444;
     /*margin-bottom: ;*/
     /*background-color: red;*/
 }
@@ -294,20 +314,27 @@ button {
     display: inline-flex;
     flex-direction: column;
     top: 0;
+    color : #444444;
 }
 
 .project-title {
-    font-family: "Caveat", cursive;
-    font-size: 3.5em;
+    /*font-family: "Caveat", cursive;*/
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
+    /*font-family: 'Bitter', serif;*/
     text-align: left;
-    padding-left: 30px;
+    padding-left: 25px;
+    /*margin-top: 50px;*/
+    font-weight: 100;
+    /*line-height: 1em;*/
     /*width: 70%;*/
 }
 
 .project-content {
-    padding-top: 20px;
-    font-family: "Antic Slab", serif;
-    font-size: 1.2rem;
+    padding-top: 8px;
+    /*font-family: "Antic Slab", serif;*/
+    font-size: 1.3rem;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
     padding-left: 30px;
     /*width: 70%;*/
@@ -330,9 +357,12 @@ button {
     padding-left: 20px;
     padding-bottom: 2em;
     text-align: Left;
-    font-size: 2rem;
+    font-size: 1.6rem;
     /* font-family: 'Zilla Slab Highlight', cursive; */
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    /*font-family: 'Bitter', serif;*/
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
 }
 
 .contact-left * {
@@ -354,7 +384,9 @@ button {
     outline: None;
     border-bottom: 3px solid white;
     color: inherit;
-    font-family: "Caveat", cursive;
+    /*font-family: "Caveat", cursive;*/
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1.4rem;
 }
 
