@@ -4,7 +4,7 @@ let element = document.getElementsByClassName('about-color');
 
 let container_width = element[0].offsetWidth;
 let container_height = element[0].offsetHeight;
-
+document.getElementsByClassName('table')[0].style.marginTop = `${-container_height + 50}px`
 // console.log(window.getComputedStyle(element[0])['margin-bottom'])
 // ------------------------------------------------------------------------------------------
 
